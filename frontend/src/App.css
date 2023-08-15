@@ -1,0 +1,38 @@
+.main_nav {
+  background-color: aquamarine;
+
+}
+.main_nav li {
+  display: inline-block;
+  padding: 1em;
+}
+.main_nav li a{
+  text-decoration: none;
+}
+
+.signUp{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  margin: auto;
+  height: 100%;
+}
+
+.signUp input{
+  margin: 1em 0;
+  font-size: 1.1em;
+}
+
+.submit{
+  font-size: 1.1em;
+}
+
+.footer{
+  text-align: center;
+  margin: 1em 0;
+  padding: 1em 0;
+  position: fixed;
+  bottom: 0;
+  background-color: aquamarine;
+  width: 100%;
+}
