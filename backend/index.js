@@ -75,4 +75,17 @@ app.put('/product/:id', async (req, res) => {
     res.send(data)
 })
 
+// ========================= Search Products =================================
+
+app.get('/search/:key', async (req, res) => {
+    const result = await Product.find({
+        $or: [
+            { name: { $regex: req.params.key } },
+            { company: { $regex: req.params.key } }
+        ]
+    })
+    res.send(result)
+})
+
+
 app.listen(8000)
